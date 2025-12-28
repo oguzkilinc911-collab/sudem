@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Sudem 💖</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffd1e8, #fff5fa);
+    color: #6b003f;
+    text-align: center;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+}
+h1 {
+    font-size: 48px;
+}
+.music-btn {
+    background: #ff5fa8;
+    color: white;
+    border: none;
+    padding: 16px 35px;
+    border-radius: 40px;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 25px 0;
+}
+.music-btn:hover {
+    background: #ff3f98;
+}
+.video-box {
+    margin: 40px 0;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+.text-box {
+    background: rgba(255,255,255,0.9);
+    padding: 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 2;
+}
+#ytMusic {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎶 ARKA PLAN MÜZİĞİ (ÇALIŞIR) -->
+<iframe
+    id="ytMusic"
+    src=""
+    allow="autoplay"
+></iframe>
+
+<div class="container">
+
+    <h1>Sudem 💕</h1>
+    <p>Mia & Sebastian’s Theme eşliğinde…</p>
+
+    <button class="music-btn" onclick="playMusic()">
+        🎵 Müziği Başlat
+    </button>
+
+    <div class="video-box">
+        <iframe 
+            src="https://drive.google.com/file/d/1zmvMox-4bFs8YZioepWnD_rU-X1n2nO5/preview"
+            allow="autoplay">
+        </iframe>
+    </div>
+
+    <div class="text-box">
+        <p>🌸 Sudem,</p>
+
+        <p>
+            Hayatıma girdiğin günden beri her şey daha güzel.  
+            Seninle geçen her an kalbimde özel bir yer edindi 💞
+        </p>
+
+        <p>
+            <strong>Seni çok seviyorum</strong> 💖  
+            Ve ne olursa olsun  
+            <strong>seni asla bırakmayacağım</strong> 🤍
+        </p>
+
+        <p>
+            Bu site sadece sana…  
+            Kalbim gibi 💗
+        </p>
+    </div>
+
+</div>
+
+<script>
+function playMusic() {
+    document.getElementById("ytMusic").src =
+    "https://www.youtube.com/embed/D3ovuBdbUqk?autoplay=1&loop=1&playlist=D3ovuBdbUqk";
+}
+</script>
+
+</body>
+</html>
